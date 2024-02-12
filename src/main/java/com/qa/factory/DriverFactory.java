@@ -1,10 +1,7 @@
 package com.qa.factory;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
 
@@ -16,8 +13,7 @@ public class DriverFactory {
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("https://www.facebook.com/login/");
+        driver.get("https://bar.bagconsult.eu/");
         return getDriver();
     }
 

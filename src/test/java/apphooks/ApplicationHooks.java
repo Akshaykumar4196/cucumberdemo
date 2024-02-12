@@ -14,7 +14,7 @@ public class ApplicationHooks {
         driverFactory=new DriverFactory();
         driver=driverFactory.init_driver();
     }
-    @After(order = 0)
+    //@After(order = 0)
     public void quitBrowser(){
         DriverFactory.getDriver().quit();
     }
